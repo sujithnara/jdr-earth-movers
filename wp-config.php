@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'jdr' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'jdr' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'MYfate-0' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'XmCdaq8IP.G~p&NxtN/~:^2`%^>AReJ0}6OQB;V^gUKpnUOifne]{Wdw,[q:Z@Yt' );
-define( 'SECURE_AUTH_KEY',  'm9aKuz=wOFR~;>V7yt1|y}if!L,h gcN=15T*GSeplc5nssq !eDEHMGpG)wZR_N' );
-define( 'LOGGED_IN_KEY',    'htxe]W>ZwN{OWFaV.,IP9;yZU?Cw2 AhvBnG;&l-YAj}1ijN)?h/2|vi0x_z^jt#' );
-define( 'NONCE_KEY',        'J#xnql`vHag^Yvl{??N;YPOz||a]1E,.z9Evo%()!c>zZUC/:B3leqJ5U`#x+J%M' );
-define( 'AUTH_SALT',        '(4Xj|u#&_YB4;V]#.5iNjFq:*f}?1sEwP-6aSD0Fr/*X^jqHSr4XN8AUP:Xnd9~M' );
-define( 'SECURE_AUTH_SALT', ' -}EaGD&thm=&,{b4)D=S}<y-_,!mH ar6=QR2)oWWf@$Yze#Q}a0st_FX7O{P>J' );
-define( 'LOGGED_IN_SALT',   'WG,0O$^C6v}-%UHK:X[fezLI.)>%}43Ea~_l;i,4R{ScK!QfloC&2=f<`$,fa4Yt' );
-define( 'NONCE_SALT',       '=]pj@v!0yM/]3i=77d=9v$[`:t2/h#YZDp*[U>xT@do$;/,k .X MN(P-HK)l(LK' );
+define('AUTH_KEY',         ']j?.7Y Fn]d&Zb>UwO>G<RK`QXA8A>^6FlTri(A6syB<[+{Xi6d3O:^+HyP,K[Yu');
+define('SECURE_AUTH_KEY',  '{J&H8 G-,>{TWqaQM`C|QK&ozizTO;UwxVrr7+_<up<C0T#%z+SvOT5hh-h54Zn7');
+define('LOGGED_IN_KEY',    'pq!+&pa*[Kxa/Z8SB>>tGYG0[Y~,_M%3oJ;h-j J{{Bx T7oH7av O}6Y~Qv-i$p');
+define('NONCE_KEY',        'ciO5t=f#P-po/]Q9v0.YSPB*_h,Kci|d +ufLb<)Y<K+DSpL-C&v-^s3.X_o`-@X');
+define('AUTH_SALT',        '^7m:fGYvLflND~f%f:Q2W(Eg-74PABm+,XJPc)Pbp6vR@^jt%34O$0hK-=O+?GK0');
+define('SECURE_AUTH_SALT', '5C8b-~[FuWV-aY1<YZr>~vfCQd?e}8R:_gJ9!`M7}%~!&^P<oHN@YrH.VBPd!f[v');
+define('LOGGED_IN_SALT',   'l<]^-T@B&*q]>0MjO^L{7;Av}g-|VA>u+Qz *g3$^xr-cD~Y7fX2+VOU86WI`}oT');
+define('NONCE_SALT',       ',=ADj2.KV]+^*Xc^<;dfgu:WWRYBDC&zJt-r%RHx]Q RCLSS~pk{;Jtk;wVgQa[3');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define( 'NONCE_SALT',       '=]pj@v!0yM/]3i=77d=9v$[`:t2/h#YZDp*[U>xT@do$;/,k .X
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'jdr_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -78,6 +78,15 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
+/* Multisite */
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+define('DOMAIN_CURRENT_SITE', 'jdrearthmovers.in');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 /* That's all, stop editing! Happy publishing. */
 
